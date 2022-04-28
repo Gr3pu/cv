@@ -1,0 +1,140 @@
+$color: #323738;
+$secondaryColor: #696969;
+$shadow: drop-shadow(3px 3px 2px rgba(80, 80, 80, 0.4));
+
+.sectionTitle {
+  padding: 6px 10px;
+  border-bottom: 2px solid $color;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: $color;
+  font-size: 1.35rem;
+}
+
+.sectionContainer {
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  color: $secondaryColor;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 small {
+  display: block;
+  color: $secondaryColor;
+}
+
+.contactInfo {
+  border-top: 2px solid $color;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: $color;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  font-weight: bold;
+}
+
+// skills
+
+.skillsContainer {
+  display: flex;
+}
+
+.skillsContainerBox {
+  flex-grow: 1;
+}
+
+.skillsContainerBox > ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.skillsContainerBox > ul > li {
+  margin-bottom: 15px;
+}
+
+.skillsContainerBox > ul > li > small {
+  font-weight: bold;
+}
+
+// education section
+
+.educationCard {
+  margin-bottom: 15px;
+}
+
+.educationCard:last-child {
+  margin-bottom: 0;
+}
+
+.educationCard > span:first-child {
+  font-weight: bold;
+  display: block;
+  font-size: 1.15rem;
+}
+
+.educationCard > span:last-child {
+  display: block;
+  padding-left: 10px;
+  color: $secondaryColor;
+}
+
+.educationCard span:last-child .date {
+  float: right;
+  font-size: 1rem;
+}
+
+// hobby section
+
+.hobbyBadge {
+}
+
+.bottomPageInfo {
+  text-align: center;
+  padding: 40px 20px;
+  font-weight: bold;
+}
+
+.pageBreak {
+  break-after: page;
+}
+
+// experience
+
+.experienceBox {
+  margin-bottom: 30px;
+}
+
+.experienceBox h3 {
+  margin-bottom: 0;
+}
+
+.experienceBox h3 span {
+  float: right;
+  font-size: 1rem;
+}
+
+.experienceBox h4 {
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.experienceBox h4 span {
+  text-transform: uppercase;
+}
+
+.experienceBox ul li {
+  margin-bottom: 10px;
+  color: $secondaryColor;
+}
