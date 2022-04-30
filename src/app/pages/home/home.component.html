@@ -1,3 +1,8 @@
+<p class="changeLangContainer">
+  <span *ngIf="lang !== 'en'" (click)="changeLang('en')">change to english version(EN).</span>
+  <span *ngIf="lang !== 'pl'" (click)="changeLang('pl')">zmień na wersję polską(PL).</span>
+</p>
+
 <h1>
   Bartosz Szczepański-Bernaś
   <small>
@@ -6,21 +11,27 @@
 </h1>
 <div class="contactInfo">
   <span>
-    [city, country]
+    Bielsko-Biala<br/>
+    Poland
   </span>
   <span>
-    [email address]
-  </span>
-  <span>
-    [linkedin username]
-  </span>
-  <span>
+    [email address]<br/>
     [phone number]
+  </span>
+  <span>
+    <a href="https://www.linkedin.com/in/bartosz-bernas/" target="_blank">
+      linkedin: bartosz-bernas
+    </a><br/>
+    <a href="https://github.com/Gr3pu" target="_blank">
+      github: Gr3pu
+    </a>
   </span>
 </div>
 
 <p class="description">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <small>
+    I am an ambitious person. Each project is for me an opportunity not only to test my skills, but also to strengthen social skills, teamwork and making compromises. Since the beginning of my career in each task I try to look at the business, through the prism of the client, so that my technical solutions are tailored to the expectations and plans of customers. I believe that there are no problems impossible to solve, everything depends on the time we have and the team. Always working in an agile way I know that independence and mutual support in solving problems are very important at work.
+  </small>
 </p>
 
 <section>
@@ -89,7 +100,7 @@
         <li>
           Docker<br/>
           <small>
-            begginer
+            beginner
           </small>
         </li>
       </ul>
@@ -98,7 +109,7 @@
 </section>
 
 <p class="description">
-  Team player, Clean code(with Solid/Kiss/Dry), Problem solver, Ambitious
+  Team player, Agile/Scrum, Clean code(with Solid/Kiss/Dry), Problem solver, Ambitious
 </p>
 
 <section>
@@ -134,12 +145,12 @@
     Hobbys
   </h3>
   <div class="sectionContainer">
-    UI/UX Design,
+    Games & movies in general,
     Martial Arts,
-    Photography,
     Cooking,
+    Photography,
     E-sport,
-    Games & movies in general.
+    UI/UX Design,
   </div>
 </section>
 
@@ -149,11 +160,13 @@
 
 <h3 class="sectionTitle"></h3>
 <p class="description">
-  I consent to the processing of my personal data for the purposes of the process
-  recruitment (in accordance with the Act of May 10, 2018 on the protection of personal data (Journal of Laws of 2018, item 1000)
-  and in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 in
-  on the protection of individuals with regard to the processing of personal data and on the free
-  the flow of such data and the repeal of Directive 95/46/WE (GDPR).
+  <small>
+    I consent to the processing of my personal data for the purposes of the process
+    recruitment (in accordance with the Act of May 10, 2018 on the protection of personal data (Journal of Laws of 2018, item 1000)
+    and in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 in
+    on the protection of individuals with regard to the processing of personal data and on the free
+    the flow of such data and the repeal of Directive 95/46/WE (GDPR).
+  </small>
 </p>
 
 <span class="pageBreak"></span>
@@ -179,10 +192,13 @@
       </h4>
       <ul>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          I was main developer leading 6 person team. I was managing tasks, designing architecture, managing merge requests and creating most difficult parts of the systems. I was responsible for delivering high quality products that meet business requirements, are fast and stable.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Stack: <strong>.Net Core, MSSQL, MySQL, HTML, JS, CSS, SCSS, Typescript, Angular</strong>
+        </li>
+        <li>
+          IDE: <strong>Rider, SourceTree, Data Grip, Buddy.works, Bitbucket CI/CD, JIRA, Confluence</strong>
         </li>
       </ul>
     </div>
@@ -200,10 +216,13 @@
       </h4>
       <ul>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          I was responsible for developing apps for local banks(loans and insurances departments). Second most important task was designing architecture of system and it's components. System was created with agile metodology. Our team was also responsible for deploying and maintenance of the systems.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Stack: <strong>.Net Core, MSSQL, MySQL, CI/CD, HTML, JS, CSS, SCSS, Typescript, Angular</strong>
+        </li>
+        <li>
+          IDE: <strong>Visual Studio, SourceTree, MSSQL Management Studio, Buddy.works, Bitbucket CI/CD, JIRA, Confluence</strong>
         </li>
       </ul>
     </div>
@@ -221,10 +240,13 @@
       </h4>
       <ul>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          I was in team taking part in creating mobile application for android systems. We used MVP architecture for the system. Among other things, I was responsible for navigating between screens, building services that transfer data between the database and the view, creating layouts, and handling media (photos, videos, audio) and camera.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Stack: <strong>Kotlin, Android, Developer Console, Firebase, XML, Java, SQLite, GIT</strong>
+        </li>
+        <li>
+          IDE: <strong>Android Studio, SourceTree, GitLab, JIRA, Confluence</strong>
         </li>
       </ul>
     </div>
@@ -242,10 +264,13 @@
       </h4>
       <ul>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          I was responsible of fixing bugs and making new features in aplication for schools(virtual lesson log/planner) in financial department - generating PDFs and changing frontend according to task
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Stack: <strong>C# .Net, MsSQL, SVN, Javascript, Ext.js, CSS</strong>
+        </li>
+        <li>
+          IDE: <strong>Visual Studio, TurtoiseSVN</strong>
         </li>
       </ul>
     </div>
@@ -263,18 +288,16 @@
       </h4>
       <ul>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          I was helping with PHP websites, changing content in several Joomla websites. Managing few PCs and printers, helping updating and making backups of mails and hard drives.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          Stack: <strong>PHP, HTML, CSS, JS, Joomla, Wordpress</strong>
+        </li>
+        <li>
+          IDE: <strong>Sublime Text</strong>
         </li>
       </ul>
     </div>
 
   </div>
 </section>
-
-
-<p class="description">
-  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
-</p>

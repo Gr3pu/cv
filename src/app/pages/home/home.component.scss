@@ -34,7 +34,6 @@ h1 small {
 .contactInfo {
   border-top: 2px solid $color;
   margin-bottom: 15px;
-  text-transform: capitalize;
   color: $color;
   font-size: 1rem;
   display: flex;
@@ -42,6 +41,24 @@ h1 small {
   justify-content: space-between;
   padding: 15px 25px;
   font-weight: bold;
+}
+
+.contactInfo a {
+  color: $color;
+  text-decoration: none;
+}
+
+.changeLangContainer span {
+  color: blue;
+  border: 1px solid #04049f;
+  cursor: pointer;
+  padding: 3px;
+}
+
+@media print {
+  .changeLangContainer {
+  display: none;
+  }
 }
 
 // skills

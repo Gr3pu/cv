@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  lang = "pl";
+
+  constructor(private route: ActivatedRoute, private router: Router) {
+  }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      if(params['lang'] != null){
+        this.lang = params['lang'];
+      }
+    });
+  }
+
+  changeLang(changeTo: string)
+  {
+    this.router.navigate(['home'], { queryParams: { lang: changeTo } });
   }
 
 }
