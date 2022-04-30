@@ -1,15 +1,17 @@
 <p class="changeLangContainer">
-  <span *ngIf="lang !== 'en'" (click)="changeLang('en')">change to english version(EN).</span>
-  <span *ngIf="lang !== 'pl'" (click)="changeLang('pl')">zmień na wersję polską(PL).</span>
+  <button (click)="print()">PRINT CV</button>
+  <a [routerLink]="['/', 'pl']">zmień na wersję polską(PL)</a>
 </p>
 
 <h1>
-  Bartosz Szczepański-Bernaś
+  <span class="accent">
+    Bartosz Szczepański-Bernaś
+  </span><br/>
   <small>
     Software developer
   </small>
 </h1>
-<div class="contactInfo">
+<div class="contactInfo accent">
   <span>
     Bielsko-Biala<br/>
     Poland
@@ -19,10 +21,10 @@
     [phone number]
   </span>
   <span>
-    <a href="https://www.linkedin.com/in/bartosz-bernas/" target="_blank">
+    <a href="https://www.linkedin.com/in/bartosz-bernas/" target="_blank" class="accent">
       linkedin: bartosz-bernas
     </a><br/>
-    <a href="https://github.com/Gr3pu" target="_blank">
+    <a href="https://github.com/Gr3pu" target="_blank" class="accent">
       github: Gr3pu
     </a>
   </span>
@@ -35,7 +37,7 @@
 </p>
 
 <section>
-  <h3 class="sectionTitle">
+  <h3 class="sectionTitle accent">
     Skills
   </h3>
   <div class="sectionContainer skillsContainer">
@@ -113,7 +115,7 @@
 </p>
 
 <section>
-  <h3 class="sectionTitle">
+  <h3 class="sectionTitle accent">
     Education
   </h3>
   <div class="sectionContainer">
@@ -141,7 +143,7 @@
 </section>
 
 <section>
-  <h3 class="sectionTitle">
+  <h3 class="sectionTitle accent">
     Hobbys
   </h3>
   <div class="sectionContainer">
@@ -154,7 +156,7 @@
   </div>
 </section>
 
-<p class="bottomPageInfo">
+<p class="bottomPageInfo accent">
   Experience section is attached on the next page. &#8631;
 </p>
 
@@ -174,7 +176,7 @@
 
 
 <section>
-  <h3 class="sectionTitle">
+  <h3 class="sectionTitle accent">
     Experience
   </h3>
   <div class="sectionContainer">
@@ -192,7 +194,7 @@
       </h4>
       <ul>
         <li>
-          I was main developer leading 6 person team. I was managing tasks, designing architecture, managing merge requests and creating most difficult parts of the systems. I was responsible for delivering high quality products that meet business requirements, are fast and stable.
+          I was main developer leading 6 person team. I was managing tasks, designing architecture, managing merge requests and creating most difficult/complex parts of the systems. I was responsible for delivering high quality, fast and stable products that meet business requirements.
         </li>
         <li>
           Stack: <strong>.Net Core, MSSQL, MySQL, HTML, JS, CSS, SCSS, Typescript, Angular</strong>
